@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  address_parser:
+    build: .
+    ports:
+      - 10000:5000
+    command: "flask run -h 0.0.0.0"
