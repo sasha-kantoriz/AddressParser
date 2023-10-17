@@ -1,0 +1,11 @@
+uwsgi:
+    module: app
+    callable: app
+    socket: 0.0.0.0:5000
+    protocol: http
+    master: true
+    enable-threads: true
+    single-interpreter: true
+    buffer-size: 65535
+    workers: 8
+    listen: 1024

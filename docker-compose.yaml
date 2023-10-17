@@ -5,4 +5,4 @@ services:
     build: .
     ports:
       - 10000:5000
-    command: "flask run -h 0.0.0.0"
+    restart: always
